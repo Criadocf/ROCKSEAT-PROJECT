@@ -1,20 +1,25 @@
 <!DOCTYPE html>
     <head>
         <title>ProjetoCriarSala</title>
+        <link rel="stylesheet" href="CSS/global.css">
+        <link rel="stylesheet" href="CSS/home.css">
     </head>
     <body>
         <header>
-            <img src="SO IMAGENS/Logo.svg" alt="Logo/>
+            <img src="SO IMAGENS/Logo.svg" alt="Logo"/>
         </header>
 
         <main>
             <div class="container">
                 <section>
                     <h2>Entre como participante</h2>
-                    <form>
+                    <form action="">
                         <label class="sr-only" for="room-id">Código da sala</label> <!--o 'id' serve para conectar o label com o input-->
-                        <input type="text" id-"room-id">
-                        <button>Entrar na sala</button>
+                        <input type="number" id-"room-id" placeholder="Código da Sala">
+                        <button>
+                            <img src="SO IMAGENS/enter.svg"/>
+                            Entrar na sala
+                        </button>
 
 
                     </form>
@@ -30,6 +35,11 @@
 
                 <section>
                     <h2>Crie sua própria sala de forma fácil</h2>
-                </section>
+                    <a href="/create-room.html">
+                        <img src="SO IMAGENS/users1.svg"/>
+                        Criar Sala       
+                    </a>
+                    
+                </section>  
     </body> 
 </html>
