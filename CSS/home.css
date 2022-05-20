@@ -1,0 +1,58 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%; /*SERVE PARA DIVIDIR AS COLUNAS DA PÁGINA, SEMPRE SUAS SOMAS TÊM Q DÁ 100%*/
+    grid-template-rows: 11.4rem 1fr; /*1fr significa que ele vai deixar apenas 1fração de tudo que sobrar abaixo do header; E o 11.4rem significa que essa vai ser a distancia da ultima fração até o topo da página*/
+
+    grid-template-areas:
+    'header header'
+    'left rigth'    
+}
+
+header{
+    grid-area: header;
+
+}
+
+#bg{
+    grid-area: left;
+
+    background: url('Saly-6.svg') no-repeat top/contain; /*top diz pra imagem ficar no topo e contain diz pra ela se encaixar toda na div em que está*/
+}
+
+main{
+    grid-area: rigth;
+    display: flex;
+    align-items: center;
+}
+
+
+main .container{
+    width: min(36.3 rem 100%);
+}
+
+main h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+
+
+input{
+    border: .2rem solid var(--grey-blue);
+    padding: 0 1.6rem;
+}
+
+input, button,.button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+
+}
+
+
+
+
+
+
+
